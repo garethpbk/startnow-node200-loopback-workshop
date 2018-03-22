@@ -3,9 +3,6 @@
     "loopback#favicon": {}
   },
   "initial": {
-    "morgan": {
-      "params": ["dev", { "buffer": true }]
-    },
     "compression": {},
     "cors": {
       "params": {
