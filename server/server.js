@@ -4,6 +4,7 @@ var loopback = require("loopback");
 var boot = require("loopback-boot");
 
 var app = (module.exports = loopback());
+var directory = "startnow-node200-loopback-workshop";
 
 app.start = function() {
   // start the web server
@@ -20,7 +21,7 @@ app.start = function() {
 
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
-boot(app, __dirname, function(err) {
+boot(app, directory, function(err) {
   if (err) throw err;
 
   // start the server if `$ node server.js`
